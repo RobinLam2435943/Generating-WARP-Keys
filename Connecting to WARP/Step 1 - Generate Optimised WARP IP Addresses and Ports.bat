@@ -4,19 +4,19 @@ cls
 goto start
 
 :start
-if not exist "warp.exe" echo 缺少warp.exe程序&pause&exit
-if not exist "ips-v4.txt" echo 缺少IPV4数据 ips-v4.txt&pause&exit
-if not exist "ips-v6.txt" echo 缺少IPV6数据 ips-v6.txt&pause&exit
+if not exist "warp.exe" echo Lacks 'warp.exe' Programme&pause&exit
+if not exist "ips-v4.txt" echo Lacks IPV4 Data ips-v4.txt&pause&exit
+if not exist "ips-v6.txt" echo Lacks IPV6 Data ips-v6.txt&pause&exit
 goto main
 
 :main
-title CF WARP 优选
+title CF WARP Optimisation
 set /a menu=1
-echo 1. WARP-V4优选&echo 2. WARP-V6优选&echo 0. 退出&echo.
-set /p menu=请选择菜单(默认%menu%):
+echo 1. WARP-V4 IP Addresses and Ports Optimiser&echo 2. WARP-V6 IP Addresses and Ports Optimiser&echo 0. Exit&echo.
+set /p menu=Please select an option (The default option is %menu%):
 if %menu%==0 exit
-if %menu%==1 title WARP-V4优选&set filename=ips-v4.txt&goto getv4
-if %menu%==2 title WARP-V6优选&set filename=ips-v6.txt&goto getv6
+if %menu%==1 title WARP-V4 Optimiser&set filename=ips-v4.txt&goto getv4
+if %menu%==2 title WARP-V6 Optimiser&set filename=ips-v6.txt&goto getv6
 cls
 goto main
 
@@ -95,6 +95,6 @@ set %%i=
 )
 warp
 del ip.txt > nul 2>&1
-echo 请按任意键关闭窗口即可
+echo Press any key to exit.
 pause>nul
 exit

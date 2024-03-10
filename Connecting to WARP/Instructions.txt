@@ -1,0 +1,9 @@
+Instructions on Connecting WARP 
+Method 1:
+   1. First, open the WARP app, but do not make the connection yet. 
+   2. Double-click on the "Step 1.bat" file. Follow the instructions. The "result.csv" file would be generated automatically. Open the "result.csv" file.
+   3. Select and copy one of the IP addresses and ports in the "result.csv" file, double-click on the "Step 2.bat" file, and paste the IP addresses and ports to the command window.
+   4. Now you could make the connection. You're good to go.
+Method 2:
+   1. First, open the WARP app, but do not make the connection yet. 
+   2. Double-click on the "WARP Optimiser.bat" file. Follow the instructions, and you'll be good to go.
